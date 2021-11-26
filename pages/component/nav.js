@@ -1,17 +1,14 @@
 import { useContext, useState, useEffect } from "react";
-import { UserContext } from "./_app";
+import { UserContext } from "../_app";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { parseCookies } from "nookies";
-
-
 
 const nav = () => {
   const router = useRouter();
   const [userRedirect, setUserRedirect] = useState(false);
   const { auth, setAuth } = useContext(UserContext);
 
-    const onSubmit = () => {
+  const onSubmit = () => {
     fetch("/api/logout", {
       method: "POST",
       headers: {
@@ -23,7 +20,6 @@ const nav = () => {
     setAuth(false);
     router.push("/login");
   };
- 
 
   return (
     <>
