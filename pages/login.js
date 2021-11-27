@@ -33,7 +33,16 @@ const login = () => {
   }
 
   return (
-    <div style={{ marginTop: "8%", borderRadius: "5px", height: "400px",  boxShadow: "2px 3px 8px 10px #888888",marginLeft:'25%',marginRight:'25%'}}>
+    <div
+      style={{
+        marginTop: "8%",
+        borderRadius: "5px",
+        height: "400px",
+        boxShadow: "2px 3px 8px 10px #888888",
+        marginLeft: "25%",
+        marginRight: "25%",
+      }}
+    >
       <Form />
       <button
         type="submit"

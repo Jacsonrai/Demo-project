@@ -1,6 +1,20 @@
+import { parseCookies } from "nookies";
+import { useContext, useEffect } from "react";
+import {UserContext} from  './_app'
 
+const Home = ({token}) => {
+  const { auth, setAuth } = useContext(UserContext);
 
-const Home = () => {
+  console.log('client',token)
+  
+  useEffect(()=>{
+    if(!token){
+      return ""
+    }
+    else{
+      setAuth(true)
+    }
+  },[])
   
   return (
     
@@ -14,6 +28,19 @@ const Home = () => {
     </>
   );
 };
-
+export async function getServerSideProps(context) {
+  const { token } = parseCookies(context);
+  if (!token) {
+    return {
+      redirect: {
+        destination: "/login",
+      },
+    };
+  }
+ 
+  return {
+    props: {token},
+  };
+}
 
 export default Home;

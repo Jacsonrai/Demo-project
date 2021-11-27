@@ -1,11 +1,10 @@
-const form=()=>{
-    return(
-        <>
-          <form
+const form = () => {
+  return (
+    <>
+      <form
         style={{
-          
           marginTop: "8%",
-        
+
           borderRadius: "5px",
           height: "400px",
         }}
@@ -41,10 +40,8 @@ const form=()=>{
             style={{ marginLeft: "50px", width: "50%" }}
           />
         </div>
-
-       
       </form>
-        </>
-    )
-}
-export default form
+    </>
+  );
+};
+export default form;

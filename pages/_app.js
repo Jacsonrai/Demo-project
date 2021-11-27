@@ -6,7 +6,7 @@ import { createContext, useState } from "react";
 export const UserContext = createContext(null);
 function MyApp({ Component, pageProps }) {
   const [auth, setAuth] = useState(false);
-
+console.log(auth)
   return (
     <>
       <Head>

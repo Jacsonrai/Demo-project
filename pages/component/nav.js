@@ -3,10 +3,12 @@ import { UserContext } from "../_app";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-const nav = () => {
+const nav = ({token}) => {
   const router = useRouter();
   const [userRedirect, setUserRedirect] = useState(false);
   const { auth, setAuth } = useContext(UserContext);
+ 
+
 
   const onSubmit = () => {
     fetch("/api/logout", {
@@ -85,5 +87,6 @@ const nav = () => {
     </>
   );
 };
+
 
 export default nav;
