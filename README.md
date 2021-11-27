@@ -1,14 +1,16 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## What this Repo About?
+This is an Demo project that help you on user Login,user Logout,Cookie and its Feature,Protected Routing,CSR,SCR,
 
-First, run the development server:
-
+## How to Run Dev?
 ```bash
 npm run dev
 # or
 yarn dev
 ```
+## Dependencies to be install before
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
