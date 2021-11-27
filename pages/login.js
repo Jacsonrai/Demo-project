@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import { useRouter } from "next/router";
 import { useContext } from "react";
 import { UserContext } from "./_app";
