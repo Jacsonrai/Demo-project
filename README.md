@@ -10,6 +10,12 @@ npm run dev
 yarn dev
 ```
 ## Dependencies to be install before
+1. npm i nookies<br>
+2. npm i @types/cookie <br>
+3. npm i nookies<br>
+
+## Dependencies to be install before
+
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
